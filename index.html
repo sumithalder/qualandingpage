@@ -5,9 +5,6 @@
         <meta charset="UTF-8">
         <title>Quanutrition</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="robots" content="index, follow"/>
-        <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
         <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
@@ -15,6 +12,8 @@
         <link type="text/css" rel="stylesheet" href="css/yourstyle.css">
         <!--=============== favicons ===============-->
         <style>
+            @import "https://fonts.googleapis.com/css?family=Raleway";
+
             *{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
             .header-inner {
                 background-color: #333;
@@ -57,19 +56,15 @@
             .slide-title-holder .slide-title  button {
                 margin-top: 20px;
                 display: inline-block;
-                width: 10%;
                 background-color: #ff7404;
                 color: #fff;
                 border: none;
+                width: 10%;
                 cursor: pointer;
                 font-size: 18px;
                 padding: 10px 20px;
                 border-radius: 50px;
             }
-        </style>
-        <style>
-            @import "https://fonts.googleapis.com/css?family=Raleway";
-
             #contactForm { 
               display: none;
               z-index: 9999;
@@ -107,6 +102,26 @@
               font-size: 1.2em;
               border: none;
               height: 30px;
+            }
+            @media screen and (max-width: 600px) {
+              .hero-text-holder .item {
+                font-size: 16px;
+              }
+              .slide-title-holder .slide-title  button {
+                width: 50%;
+              }
+              .hide-image {
+                display: none;
+              }
+              .hero-grid {
+                width: 50%;
+              }
+              nav li a {
+                color: #333;
+              }
+              .separator-image img {
+                margin-top: -80px;
+              }
             }
         </style>
     </head>
@@ -156,7 +171,7 @@
                             <!-- Hero title -->
                             <div class="slide-title-holder">
                                 <div class="slide-title">
-                                    <div class="separator-image"><img src="images/logo_white.png" alt=""></div>
+                                    <div class="separator-image"><img class="img" src="images/logo_white.png" alt=""></div>
                                     <div class="hero-text-holder">
                                         <div class="hero-text owl-carousel">
                                             <!--3  -->
@@ -236,7 +251,7 @@
                             </div>
                             <!-- 4end -->
                             <!-- 4 -->
-                            <div class="hero-grid">
+                            <div class="hero-grid hide-image">
                                 <div class="overlay"></div>
                                 <div class="hero-slider owl-carousel" data-attime="2220" data-rtlt="true">
                                     <div class="item">
@@ -252,7 +267,7 @@
                             </div>
                             <!-- 4end -->
                             <!-- 4 -->
-                            <div class="hero-grid">
+                            <div class="hero-grid hide-image">
                                 <div class="overlay"></div>
                                 <div class="hero-slider owl-carousel" data-attime="3220" data-rtlt="true">
                                     <div class="item">
@@ -268,7 +283,7 @@
                             </div>
                             <!-- 4end -->
                             <!-- 4 -->
-                            <div class="hero-grid">
+                            <div class="hero-grid hide-image">
                                 <div class="overlay"></div>
                                 <div class="hero-slider owl-carousel" data-attime="1220" data-rtlt="true">
                                     <div class="item">
@@ -284,7 +299,7 @@
                             </div>
                             <!-- 4end -->
                             <!-- 4 -->
-                            <div class="hero-grid">
+                            <div class="hero-grid hide-image">
                                 <div class="overlay"></div>
                                 <div class="hero-slider owl-carousel" data-attime="2220" data-rtlt="true">
                                     <div class="item">
