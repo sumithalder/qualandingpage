@@ -86,6 +86,7 @@
               text-transform: uppercase; 
               font-size: 14px;
               font-weight: 400;
+              color: #333;
               opacity: .5;
               display: block; 
               width: 280px; 
@@ -154,7 +155,7 @@
                     <div class="nav-holder">
                         <nav>
                             <ul>
-                                <li><a href="#">DIETITIANS +<span style="color:#ff7404;padding-left: 5px;">60 +</span></a></li>
+                                <li><a href="#">DIETITIANS<span style="color:#ff7404;padding-left: 5px;">60 +</span></a></li>
                                 <li><a href="#">HAPPY CLIENTS<span style="color:#ff7404;padding-left: 5px;">10,000 +</span></a></li>
                                 <li><a href="#">YEARS OF EXPERIENCE<span style="color:#ff7404;padding-left: 5px;">10 +</span></a></li>
                             </ul>
@@ -457,12 +458,12 @@
             <div class="right-decor"></div>
             <div id="contactForm">
 
-              <h3 style="font-size: 24px;font-weight: 400;color:#ff7404; ">Let's get-in-touch. Just fill the below and we'll call you back</h3>
+              <h3 style="font-size: 24px;font-weight: 400;color:#ff7404; ">Let's get-in-touch. Just fill the below and we'll call you back.</h3>
               
               <form action="#">
-                <input placeholder="Name" type="text" required />
-                <input placeholder="Email" type="email" required />
-                <input  name="phone"  class="form-control required Phone" type="tel" maxlength="10" minlength="10" placeholder="Enter Number" aria-required="true" required>
+                <input class="form-control" placeholder="Name" type="text" required />
+                <input class="form-control" placeholder="Email" type="email" required style="color: #333;" />
+                <input  name="phone"  class="form-control required Phone" type="tel" maxlength="10" minlength="10" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-required="true" required>
                 <select type="text" name="age" id="age" class=" form-control required" aria-required="true" required>
                   <option value="< 18"> < 18 </option>
                   <option value="18-24">18-24</option>
@@ -478,6 +479,8 @@
                   <option value="goa">Goa</option>
                   <option value="kolkata">Kolkata</option>
                   <option value="mumbai">Mumbai</option>
+                  <option value="mumbai">Others</option>
+
                 </select>
                 <input class="formBtn" type="submit" />
                 <input class="formBtn" type="reset" />
